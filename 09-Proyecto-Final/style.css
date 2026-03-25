@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+
+    display: flex;
+    
+}
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    color: #fff;
+    width: 220px;
+    height: 100vh;
+    padding: 10px;
+}
+
+aside p {
+    font-size: 24px;
+    font-weight: 700;
+}
+nav {
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+ul li {
+    padding-bottom: 12px;
+    margin: 0;
+    text-align: left;
+    cursor: pointer;
+}
+.playlist img {
+    width: 100px;
+    height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgba(15, 15, 15, 0.904);
+}
+#flechas {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+#flechas img {
+    background-color: #fff;
+    border-radius: 50%;
+}
+#acciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#acciones button {
+    border: none;
+    border-radius: 16px;
+    background-color: slateblue;
+    color: #fff;
+    padding: 8px;
+}
+#acciones img {
+    background-color: white;
+    border-radius: 50%;
+    height: auto;
+    padding: 5px;
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(22, 21, 21);
+    color: #fff;
+    padding: 18px;
+}
+
+.container-playlist {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 12px;
+    
+}
+.playlist {
+    background-color: rgb(17, 17, 17);
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    box-sizing: border-box;
+}
+.playlist h4,
+.playlist p {
+    margin: 0;
+}
+
+.playlist h4 {
+    margin-top: 8px;
+    margin-bottom: 6px;
+}
+.playlist img {
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 70px;
+    color: #fff;
+    padding: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 575px;
+
+}
+#reproduciendo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer h5, 
+footer p {
+    margin: 0;
+}
+footer p {
+    font-size: 12px;
+    margin-top: 4px;
+}
+audio {
+    height: 40px;
+}
+.volumen {
+    margin-right: 20px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+.iconos {
+    background-color: #fff;
+    border-radius: 50%;
+}

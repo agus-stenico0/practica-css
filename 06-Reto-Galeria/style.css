@@ -36,13 +36,25 @@ body {
 
 /* 1. El Contenedor de la Galería */
 .galeria {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, 200px);
+  background-color: red;
+  gap: 10px;
+  
 }
 
 /* 2. Las Imágenes */
 .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .item {
+  
 }
 
 .item:hover img {
@@ -50,7 +62,10 @@ body {
 
 /* 3. Destacando Fotos (Rompiendo la Grilla) */
 .destacado-h {
+  grid-column: 2 span;
+  height: 200px;
 }
 
 .destacado-v {
+  grid-row: 2 span;
 }

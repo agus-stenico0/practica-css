@@ -5,6 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Appwise Music - Proyecto Final</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/musical-note-outline.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Cinzel:wght@400..900&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Iosevka+Charon:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <body></body>
+  <body>
+    <aside>
+      <p>AppwiseMusic</p>
+      <nav>
+        <ul>
+          <li>Inicio</li>
+          <li>Buscar</li>
+          <li>Biblioteca</li>
+        </ul>
+
+      </nav>
+    </aside>
+
+    
+    <main>
+      <header>
+        <div id="flechas">
+          <img src="./assets/flecha-izquierda.svg" alt="" width="30px">
+          <img src="./assets/flecha-derecha.svg" alt="" width="30px">
+        </div>
+
+        <div id="acciones">
+          <button>Exporar premium</button>
+          <img src="./assets/perfil.svg" alt="Foto perfil" id="foto-perfil" width="30px">
+        </div>
+
+      </header>
+
+      <h2>Hecho para ti</h2>
+      <div class="container-playlist">
+        <div class="playlist">
+          <img src="./assets/music.webp" alt="">
+          <h4>Rock Internacional</h4>
+          <p>Leyendas iconicas del genero.</p>
+        </div>
+        <div class="playlist">
+          <img src="./assets/music.webp" alt="">
+          <h4>Code</h4>
+          <p>Concentracion al maximo.</p>
+        </div>
+        <div class="playlist">
+          <img src="./assets/music.webp" alt="">
+          <h4>Sonidos de la naturaleza</h4>
+          <p>Relajate con estos sonidos naturales.</p>
+        </div>
+        <div class="playlist">
+          <img src="./assets/music.webp" alt="">
+          <h4>Trap Argentino</h4>
+          <p>Los artistas mas influyentes del genero.</p>
+        </div>
+        <div class="playlist">
+          <img src="./assets/music.webp" alt="">
+          <h4>Urbano</h4>
+          <p>Lo mas escuchado actualmente.</p>
+        </div>
+        <div class="playlist">
+          <img src="./assets/music.webp" alt="">
+          <h4>Podcast</h4>
+          <p>Ranking de los podcast mas escuchados.</p>
+        </div>       
+      </div>
+      
+    </main>
+    <footer>
+      <div id="reproduciendo">
+          <img src="./assets/music.webp" alt="" width="40px">
+        <div class="titulo">
+          <h5>Bug en Programación</h5>
+          <p>Equipo Tech</p>
+
+        </div>
+      </div>
+      
+      <audio src="audio.mp3" controls ></audio>
+
+      <div class="volumen">
+        <img src="./assets/volumen.svg" alt="" class="iconos" width="30px" >
+        <input type="range" id="volumen" min="0" max="1" step="0.01" value="1">
+      </div>
+    </footer>
+  </body>
 </html>
